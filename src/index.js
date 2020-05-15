@@ -1,9 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
+import { Link } from "@reach/router";
 
 const App = () => (
   <div>
     <h1>Tutorial!</h1>
+    <nav>
+      <Link to="/">Home</Link> <Link to="dashboard">Dashboard</Link>
+    </nav>
   </div>
 );
 
