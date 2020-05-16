@@ -13,6 +13,7 @@ const App = () => (
       <Home path="/" />
       <Dashboard path="/dashboard" />
       <Invoices path="/invoices">
+        <InvoicesIndex path="/" />
         <Invoice path="/:invoiceId" />
       </Invoices>
     </Router>
@@ -49,6 +50,12 @@ const Invoices = (props) => (
       </li>
     </ul>
     {props.children}
+  </div>
+);
+
+const InvoicesIndex = () => (
+  <div>
+    <p>Maybe put some pretty graphs here or something.</p>
   </div>
 );
 
