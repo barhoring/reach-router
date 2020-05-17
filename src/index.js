@@ -50,6 +50,28 @@ const Invoices = (props) => (
         <Link to="abc">Invoice ABC</Link>
       </li>
     </ul>
+
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+        const id = event.target.elements[0].value;
+        console.log(id);
+        event.target.reset();
+        // pretend like we saved a record to the DB here
+        // and then we navigate imperatively
+
+        props.navigate(id); // like navigate(`/invoices/${id}`);
+        console.log(id);
+      }}
+    >
+      <p>
+        <label>
+          New Invoice ID: <input type="text" />
+        </label>
+      </p>
+      <button type="submit">create</button>
+    </form>
+
     {props.children}
   </div>
 );
