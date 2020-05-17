@@ -16,6 +16,7 @@ const App = () => (
         <InvoicesIndex path="/" />
         <Invoice path="/:invoiceId" />
       </Invoices>
+      <NotFound default />
     </Router>
   </div>
 );
@@ -58,5 +59,7 @@ const InvoicesIndex = () => (
     <p>Maybe put some pretty graphs here or something.</p>
   </div>
 );
+
+const NotFound = () => <p>sorry, nada here</p>;
 
 render(<App />, document.getElementById("root"));
