@@ -1,0 +1,20 @@
+{
+  "name": "reach-router-tutorial-03",
+  "version": "1.0.0",
+  "description": "Reach Router Tutorial Step 3",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@reach/router": "1.0.2",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
